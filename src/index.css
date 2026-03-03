@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+  }
+  .dark {
+    --bg: #0a0a0a;
+    --fg: #ffffff;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

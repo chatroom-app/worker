@@ -1,0 +1,8 @@
+{
+  "name": "chatroom",
+  "description": "Simple, ephemeral peer-to-peer meetings.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
